@@ -1,2 +1,4 @@
 # Project Details
-This is the first submitted deep reinforcement learning project for the Deep Reinforcement Learning Nanodegree.  
+This is the first project for the Deep Reinforcement Learning Nanodegree.  
+
+# Objective
