@@ -1,2 +1,2 @@
-# rl_first_project
+# Project Details
 first deep RL project
