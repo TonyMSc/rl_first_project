@@ -6,6 +6,10 @@ For deep Q learning we combine temporal difference learning with neural networks
 $Q(S_{t}, A_t) = (1-\alpha)Q(S_{t}, A_{t}) + \alpha(R_{t} + \lambda(max_{a}Q(S_{t+1},a)) $
 ### Model Hyperparameters
 ### Model Architectures
+The neural network architecture is a simple feed forward neural network:  
+1. The inputs are the state size (for this problem it is a state space of 37)
+2. The hidden layer consists of several fully connected linear layers with a relu activation function
+3. The output is the number of actions we can take in the enviornment (for this problem the agent can take 4 actions)
 ## Double Deep Q
 ### Learning Learning Algorithm
 $e^{i \pi} = -1$
