@@ -14,4 +14,11 @@ The objective of this project is to train an agent to collect bananas in a large
 <br> When the agent achives an average score of +13 over 100 consecutive episodes, the enviornment is solved.
 
 # Getting Started
+Step1:
+Install Anaconda distribution at:
+https://www.anaconda.com/
+
+Step2:
+Follow the instrutions to setup the enviornment for you system (window, mac, etc.)
+https://github.com/udacity/Value-based-methods#dependencies
 # Instructions
