@@ -43,12 +43,12 @@ The neural network architecture is a simple feed forward neural network:
 4. The optimizer for this network is Adam with a learning rate of 5e-4
 5. The loss function to minimize is the mean squared error of the $Q_{expected}$ and the $Q_{target}$
 ## Double Deep Q
-In Double Deep Q learning we use two identical neural network models to mitigate the oversestimation of the action value function problem in DQN. Two neural network models are now used to build the target
+In Double Deep Q learning we use two identical neural network models to mitigate the oversestimation of the action value function problem in DQN. Two neural network models are now used to build the target.  The online nextwork is used to get the index of the highest-valued action of the next state, then the target network gets the Q_values of the next state from the action of the online network.
 ### Learning Learning Algorithm
 One DQN is used to select the action \
 $a_{t+1}^{\star} := argmaxQ_{1}(s_{t+1},a_{t+1})$ \
 A second DQN evaluates it \
-$R + \gamma Q_{2}(s_{t+1}, a^{\star}_{t+1})$ \
+$R + \gamma Q_{2}(s_{t+1}, a^{\star}_{t+1})$ 
 
 ### Model Hyperparameters
 
