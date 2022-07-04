@@ -28,6 +28,8 @@ The neural network architecture is a simple feed forward neural network:
 1. The inputs are the state size (for this problem it is a state space of 37)
 2. The hidden layer consists of several fully connected linear layers with a relu activation function
 3. The output is the number of actions we can take in the enviornment (for this problem the agent can take 4 actions)
+4. The optimizer for this network is Adam with a learning rate of 5e-4
+5. The loss function to minimize is the mean squared error of the $Q_{expected}$ and the $Q_{target}$
 ## Double Deep Q
 ### Learning Learning Algorithm
 $e^{i \pi} = -1$
