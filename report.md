@@ -25,6 +25,7 @@ $A_{\pi}(s, a) : = Q_{\pi}(s, a) - V_{\pi}(s)$ \
 
 ### Model Hyperparameters
 ### Model Architectures
+The model architecture changes from a neural network that estimates the Q values for each action (first model) to a neural network that computes the value of a state and the advantages seperatly (second model).  The seperate values are then added together to create the Q value estimates.   
 ![](images/dueling_dqn.png)
 ## Prioritized Experience Replay
 ###Deep Q
