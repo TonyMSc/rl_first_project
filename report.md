@@ -43,21 +43,14 @@ The neural network architecture is a simple feed forward neural network:
 4. The optimizer for this network is Adam with a learning rate of 5e-4
 5. The loss function to minimize is the mean squared error of the $Q_{expected}$ and the $Q_{target}$
 ## Double Deep Q
+In Double Deep Q learning we use two identical neural network models to mitigate the oversestimation of the action value function problem in DQN. Two neural network models are now used to build the target
 ### Learning Learning Algorithm
-$e^{i \pi} = -1$
+One DQN is used to select the action 
+$a^{*}_{t+1} := argmaxQ_{1}(s_{t+1},a_{t+1})$ \\
+A second DQN evaluates it
+R + /gammaQ_{2}(s_{t+1}, a^{*}_{t+1}P
 ### Model Hyperparameters
-An infinate number of hyperparameter combinations can be used in this problem.  Including:
-1. number of hidden layers in the neural network
-2. number of nodes in each layer in the neural network
-3. the optimizer used in the neural network
-4. the learning rate of the optimizer
-5. starting epsilon for the epsilon greedy policy
-6. decay rate of epsilon
-7. the mini batch size
-8. the buffer size for the replay
-9. the gamma rate for the discount factor
 
-To limit the 
 ### Model Architectures
 ## Dueling Deep Q
 The Dueling Deep Q changes the neural network 
