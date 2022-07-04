@@ -21,4 +21,9 @@ https://www.anaconda.com/
 Step2:
 Follow the instrutions to setup the enviornment for you system (window, mac, etc.)
 https://github.com/udacity/Value-based-methods#dependencies
+
+Step3:
+Clone my project repo
+git clone https://github.com/TonyMSc/rl_first_project.git
+
 # Instructions
