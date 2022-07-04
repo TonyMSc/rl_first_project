@@ -48,7 +48,8 @@ In Double Deep Q learning we use two identical neural network models to mitigate
 One DQN is used to select the action \
 $a_{t+1}^{\star} := \[\argmax_{a_{t+1}}\] Q_{1}(s_{t+1},a_{t+1})$ \
 A second DQN evaluates it \
-$R + \gamma Q_{2}(s_{t+1}, a^{\star}_{t+1})$
+$R + \gamma Q_{2}(s_{t+1}, a^{\star}_{t+1})$ \
+\newcommand{\argmin}{\mathop{\mathrm{arg\,min}}
 ### Model Hyperparameters
 
 ### Model Architectures
