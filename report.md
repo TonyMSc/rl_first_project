@@ -12,10 +12,9 @@ $e^{i \pi} = -1$
 ### Model Architectures
 ## Dueling Deep Q
 ### Learning Learning Algorithm
-
-	$Q_w^{t+1}(s, a) := Q_w^{t}(s, a) + (r + \gamma \max _{a' \in A} Q_w^t(s', a') - Q_w^t(s, a)$
+$Q_w^{t+1}(s, a) := Q_w^{t}(s, a) + (r + \gamma \max _{a' \in A} Q_w^t(s', a') - Q_w^t(s, a)$
 		
-\end{align*}
+
 ### Model Hyperparameters
 ### Model Architectures
 ## Prioritized Experience Replay
