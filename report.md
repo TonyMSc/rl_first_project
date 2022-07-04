@@ -57,7 +57,7 @@ $Q_{\pi}(s, a)$ is the expected return selecting action a using policy $\pi$ \
 $V_{\pi}(s)$ The value of a state is the expected return using policy $\pi$ \
 $A_{\pi}(s, a)$ The advantage is the excess expected return of action a above the value of state \
 Or written another way: \
-$A_{\pi}(s, a) : = Q_{\pi}(s, a) - V_{\pi}(s)$ \
+$A_{\pi}(s, a) : = Q_{\pi}(s, a) - V_{\pi}(s)$ 
 		
 
 ### Model Hyperparameters
