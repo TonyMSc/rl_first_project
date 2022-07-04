@@ -46,9 +46,9 @@ The neural network architecture is a simple feed forward neural network:
 In Double Deep Q learning we use two identical neural network models to mitigate the oversestimation of the action value function problem in DQN. Two neural network models are now used to build the target
 ### Learning Learning Algorithm
 One DQN is used to select the action 
-$a^{*}_{t+1} := argmaxQ_{1}(s_{t+1},a_{t+1})$ \\
+$a^{*}_{t+1} := argmaxQ_{1}(s_{t+1},a_{t+1})$ 
 A second DQN evaluates it
-R + /gammaQ_{2}(s_{t+1}, a^{*}_{t+1}P
+$R + /gammaQ_{2}(s_{t+1}, a^{*}_{t+1}$
 ### Model Hyperparameters
 
 ### Model Architectures
