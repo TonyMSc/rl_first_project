@@ -35,4 +35,6 @@ The model architecture changes from a neural network that estimates the Q values
 # Plot of Rewards from Experiments
 
 # Ideas for Future Work
+**Neural Net Architecture**-Possibly use a CNN layer with the feed forward neural net to help identify colors
+
 
