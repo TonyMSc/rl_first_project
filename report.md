@@ -23,6 +23,18 @@ For deep Q learning we combine temporal difference learning with neural networks
 ### Learning Learning Algorithm
 $Q(S_{t}, A_t) = (1-\alpha)Q(S_{t}, A_{t}) + \alpha(R_{t} + \lambda(max_{a}Q(S_{t+1},a)) $
 ### Model Hyperparameters
+An infinate number of hyperparameter combinations can be used in this problem.  Including:
+1. number of hidden layers in the neural network
+2. number of nodes in each layer in the neural network
+3. the optimizer used in the neural network
+4. the learning rate of the optimizer
+5. starting epsilon for the epsilon greedy policy
+6. decay rate of epsilon
+7. the mini batch size
+8. the buffer size for the replay
+9. the gamma rate for the discount factor
+
+To limit the 
 ### Model Architectures
 The neural network architecture is a simple feed forward neural network:  
 1. The inputs are the state size (for this problem it is a state space of 37)
