@@ -25,6 +25,7 @@ $A_{\pi}(s, a) : = Q_{\pi}(s, a) - V_{\pi}(s)$ \
 
 ### Model Hyperparameters
 ### Model Architectures
+![](images/dueling_dqn.png)
 ## Prioritized Experience Replay
 ###Deep Q
 ### Double Deep Q
