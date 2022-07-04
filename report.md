@@ -11,7 +11,8 @@ Action Space - the agent has 4 discrete actions
   * 1 = Move Backward
   * 2 = Turn Left
   * 3 = Turn Right
-<br> When the agent achives an average score of +13 over 100 consecutive episodes, the enviornment is solved.
+
+When the agent achives an average score of +13 over 100 consecutive episodes, the enviornment is solved.
 
 The following Algorithms were tested. 
 
