@@ -11,8 +11,14 @@ $e^{i \pi} = -1$
 ### Model Hyperparameters
 ### Model Architectures
 ## Dueling Deep Q
+The Dueling Deep Q changes the neural network 
 ### Learning Learning Algorithm
-$Q_w^{t+1}(s, a) := Q_w^{t}(s, a) + (r + \gamma \max _{a' \in A} Q_w^t(s', a') - Q_w^t(s, a)$
+
+$Q_{\pi}(s, a) := V_{\pi}(s) + A_{\pi}(s, a)$ \
+where \
+$Q_{\pi}(s, a)$ is the expected return selecting action a using policy $\pi$ \
+$V_{\pi}(s)$ is the expected return using policy $\pi$ \
+$A_{\pi}(s, a)$ is the excess return of action a above the value of state
 		
 
 ### Model Hyperparameters
