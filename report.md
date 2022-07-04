@@ -34,7 +34,7 @@ The neural network architecture is a simple feed forward neural network:
 ### Learning Learning Algorithm
 $e^{i \pi} = -1$
 ### Model Hyperparameters
-An infinate number of hyperparameter combinations can be used in this problems.  Including:
+An infinate number of hyperparameter combinations can be used in this problem.  Including:
 1. number of hidden layers in the neural network
 2. number of nodes in each layer in the neural network
 3. the optimizer used in the neural network
