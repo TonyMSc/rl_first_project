@@ -36,9 +36,9 @@ The model architecture changes from a neural network that estimates the Q values
 
 # Ideas for Future Work
 **Neural Net Architecture**-Possibly use a CNN layer with the feed forward neural net to help identify colors.  Experiment with different number of layers and neuron combinations.  
-**Aditional Experiments**-Experiment with with a Dueling DDQN and other extensions of the DQN such as: \
-1. Distributional DQN \
-2. Noisy DQN \
+**Aditional Experiments**-Experiment with with a Dueling DDQN and other extensions of the DQN such as: 
+1. Distributional DQN 
+2. Noisy DQN 
 3. Prioritized DDQN
 
 
