@@ -54,8 +54,9 @@ The model architecture changes from a neural network that estimates the Q values
 ### Double Deep Q
 ### Dueling Deep Q
 
-Results from the experiments are as follows:
+
 # Plot of Rewards from Experiments
+Results from the experiments are as follows:
 
 # Ideas for Future Work
 **Neural Net Architecture**-Possibly use a CNN layer with the feed forward neural net to help identify colors.  Experiment with different number of layers and neuron combinations.  
