@@ -1,8 +1,9 @@
 # Learning Algorithm
-
+ 
 ## Deep Q
+For deep Q learning we combine temporal difference learning with neural networks.  
 ### Learning Learning Algorithm
-$e^{i \pi} = -1$
+$Q(S_{t}, A_t) = (1-\alpha)Q(S_{t}, A_{t}) + \alpha(R_{t} + \lambda(max_{a}Q(S_{t+1},a)) $
 ### Model Hyperparameters
 ### Model Architectures
 ## Double Deep Q
