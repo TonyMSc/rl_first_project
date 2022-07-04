@@ -34,6 +34,18 @@ The neural network architecture is a simple feed forward neural network:
 ### Learning Learning Algorithm
 $e^{i \pi} = -1$
 ### Model Hyperparameters
+An infinate number of hyperparameter combinations can be used in this problems.  Including:
+1. number of hidden layers in the neural network
+2. number of nodes in each layer in the neural network
+3. the optimizer used in the neural network
+4. the learning rate of the optimizer
+5. starting epsilon for the epsilon greedy policy
+6. decay rate of epsilon
+7. the mini batch size
+8. the buffer size for the replay
+9. the gamma rate for the discount factor
+
+To limit the 
 ### Model Architectures
 ## Dueling Deep Q
 The Dueling Deep Q changes the neural network 
