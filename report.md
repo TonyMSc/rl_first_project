@@ -32,15 +32,15 @@ To limit the number of experiments, we will change only the following:
 3. decay rate of epsilon.
 
 The following Hyperparameters are kepts fixed:
-BUFFER_SIZE = int(1e5)   replay buffer size
-BATCH_SIZE = 64          minibatch size
-GAMMA = 0.99             discount factor
-TAU = 1e-3               for soft update of target parameters
-LR = 5e-4                learning rate 
-UPDATE_EVERY = 4         how often to update the network
-n_episodes=2000		 maximum number of episodes
-max_t=1000		 maximum number of timesteps per episode
-eps_start=1.0		 Starting Epsilon for the epsilon greedy policy
+BUFFER_SIZE = int(1e5)   replay buffer size \
+BATCH_SIZE = 64          minibatch size \
+GAMMA = 0.99             discount factor \
+TAU = 1e-3               for soft update of target parameters \
+LR = 5e-4                learning rate \
+UPDATE_EVERY = 4         how often to update the network \
+n_episodes=2000		 maximum number of episodes \
+max_t=1000		 maximum number of timesteps per episode \
+eps_start=1.0		 Starting Epsilon for the epsilon greedy policy \
 eps_end=0.01		 Starting Epsilon for the epsilon greedy policy
 
 ### A total of 9 experiments are performed
