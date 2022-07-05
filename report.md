@@ -14,14 +14,6 @@ Action Space - the agent has 4 discrete actions
 
 When the agent achives an average score of +13 over 100 consecutive episodes, the enviornment is solved.
 
-The following Algorithms were tested. 
-
-# Learning Algorithm
- 
-## Deep Q
-For deep Q learning we combine temporal difference learning with neural networks.  
-### Learning Learning Algorithm
-$Q(S_{t}, A_t) = (1-\alpha)Q(S_{t}, A_{t}) + \alpha(R_{t} + \lambda(max_{a}Q(S_{t+1},a)) $
 ### Model Hyperparameters
 An infinate number of hyperparameter combinations can be used in this problem.  Including:
 1. number of hidden layers in the neural network
@@ -34,7 +26,24 @@ An infinate number of hyperparameter combinations can be used in this problem.  
 8. the buffer size for the replay
 9. the gamma rate for the discount factor
 
-To limit the 
+To limit the number of experiments, we will change only the following:
+1. number of hidden layers in the neural network
+2. number of nodes in each layer in the neural network
+3. decay rate of epsilon.
+
+A total of 9 experiments are performed
+1.
+
+
+The following Algorithms were tested. 
+
+# Learning Algorithm
+ 
+## Deep Q
+For deep Q learning we combine temporal difference learning with neural networks.  
+### Learning Learning Algorithm
+$Q(S_{t}, A_t) = (1-\alpha)Q(S_{t}, A_{t}) + \alpha(R_{t} + \lambda(max_{a}Q(S_{t+1},a)) $
+
 ### Model Architectures
 The neural network architecture is a simple feed forward neural network:  
 1. The inputs are the state size (for this problem it is a state space of 37)
@@ -50,8 +59,6 @@ $a_{t+1}^{\star} := argmaxQ_{1}(s_{t+1},a_{t+1})$ \
 A second DQN evaluates it \
 $R + \gamma Q_{2}(s_{t+1}, a^{\star}_{t+1})$ 
 
-### Model Hyperparameters
-
 ### Model Architectures
 ## Dueling Deep Q
 The Dueling Deep Q changes the neural network 
@@ -65,15 +72,11 @@ $A_{\pi}(s, a)$ The advantage is the excess expected return of action a above th
 Or written another way: \
 $A_{\pi}(s, a) : = Q_{\pi}(s, a) - V_{\pi}(s)$ 
 		
-
-### Model Hyperparameters
 ### Model Architectures
 The model architecture changes from a neural network that estimates the Q values for each action (first model) to a neural network that computes the value of a state and the advantages seperatly (second model).  The seperate values are then added together to create the Q value estimates.  This should make the training process faster.
 ![](images/dueling_dqn.png)
 ## Prioritized Experience Replay
-###Deep Q
-### Double Deep Q
-### Dueling Deep Q
+
 
 
 # Plot of Rewards from Experiments
