@@ -76,12 +76,14 @@ $A_{\pi}(s, a) : = Q_{\pi}(s, a) - V_{\pi}(s)$
 The model architecture changes from a neural network that estimates the Q values for each action (first model) to a neural network that computes the value of a state and the advantages seperatly (second model).  The seperate values are then added together to create the Q value estimates.  This should make the training process faster.
 ![](images/dueling_dqn.png)
 ## Prioritized Experience Replay
-
-
+To make the replay buffer for efficient (currently it uses a uniform distribution), we experiment with a Prioritized Experience Replay.  Each experience will be assigned a probability from 0 to 1.  The higher the priority of an experience, the higher the probablility it will get picked from the buffer.  
+We assign the probability as follows
+$P(i) := \dfrac{p_{i}^{a}}{\sum_{k}p_{k}^{a}}
 
 # Plot of Rewards from Experiments
 Results from the experiments are as follows:
 
+# Analysis of results
 # Ideas for Future Work
 **Neural Net Architecture**-Possibly use a CNN layer with the feed forward neural net to help identify colors.  Experiment with different number of layers and neuron combinations.  
 **Aditional Experiments**-Experiment with with a Dueling DDQN and other extensions of the DQN such as: 
