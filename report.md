@@ -1,6 +1,7 @@
 
 # Background
 The objective of this project is to train an agent to collect bananas in a large square world.  We want the agent to collect the yellow bananas and avoid the blue bananas.  The agent has a positive reward of +1 for collecting a yellow banana and a negative reward of -1 for collecting a blue banana.  Success is measured by the agent getting an average score of +13 over 100 consecutive episodes.
+![rl_bannana](https://user-images.githubusercontent.com/54339413/177430607-d5ba2a4c-dc60-4250-ac72-35f9c2279b9a.gif)
 
 ## Enviornment Details
 State Space - state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction.
