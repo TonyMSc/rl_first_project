@@ -78,7 +78,9 @@ The model architecture changes from a neural network that estimates the Q values
 ## Prioritized Experience Replay
 To make the replay buffer for efficient (currently it uses a uniform distribution), we experiment with a Prioritized Experience Replay.  Each experience will be assigned a probability from 0 to 1.  The higher the priority of an experience, the higher the probablility it will get picked from the buffer.  
 We assign the probability as follows
-$P(i) := \frac{p_{i}^{a}}{\sum_{k}p_{k}^{a}}$
+$P(i) := \frac{p_{i}^{a}}{\sum_{k}p_{k}^{a}}$ with alpha (a) regulating the priority (alpha at zero would assign a uniform distribution).
+We start with alpha at 1 and slowly reduce it toward zero as training progresses.
+We choose priority based on the largest temporal difference error.
 
 # Plot of Rewards from Experiments
 Results from the experiments are as follows:
