@@ -31,9 +31,28 @@ To limit the number of experiments, we will change only the following:
 2. number of nodes in each layer in the neural network
 3. decay rate of epsilon.
 
-A total of 9 experiments are performed
-1.
+The following Hyperparameters are kepts fixed:
+BUFFER_SIZE = int(1e5)   replay buffer size
+BATCH_SIZE = 64          minibatch size
+GAMMA = 0.99             discount factor
+TAU = 1e-3               for soft update of target parameters
+LR = 5e-4                learning rate 
+UPDATE_EVERY = 4         how often to update the network
+n_episodes=2000		 maximum number of episodes
+max_t=1000		 maximum number of timesteps per episode
+eps_start=1.0		 Starting Epsilon for the epsilon greedy policy
+eps_end=0.01		 Starting Epsilon for the epsilon greedy policy
 
+### A total of 9 experiments are performed
+1. DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995
+2. Double DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995
+3. Dueling DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995
+4. DQN with 3 hidden NN layers, 128 nodes, epsilon start 1.0, decay 0.8
+5. Double DQN with 3 hidden NN layers, 128 nodes, epsilon start 1.0, decay 0.8
+6. Dueling DQN with 3 hidden NN layers, 128 nodes, epsilon start 1.0, decay 0.8
+7. DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995, Prioritized Experience Replay
+8. Double DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995, Prioritized Experience Replay
+9. Dueling DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995, Prioritized Experience Replay
 
 The following Algorithms were tested. 
 
