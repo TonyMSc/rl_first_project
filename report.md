@@ -60,7 +60,7 @@ The following Algorithms were tested.
 # Learning Algorithm
  
 ## Deep Q
-For deep Q learning we combine temporal difference learning with neural networks.  
+The baseline model is the Deep Q network.  Where the states are inputs to a neural network that outputs the actions and Q-values.  Two idential networks are used, one target and one local.  The network tries to minimize the squared difference between the output Q values and the target Q values.  Then back propagation updates the weights and biases.  An epsilon greedy policy.  We store the experiences in a replay buffer as a list of tuples.  
 ### Learning Algorithm
 $Q(S_{t}, A_t) = (1-\alpha)Q(S_{t}, A_{t}) + \alpha(R_{t} + \lambda(max_{a}Q(S_{t+1},a)) $
 
