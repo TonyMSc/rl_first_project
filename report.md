@@ -3,7 +3,7 @@
 The objective of this project is to train an agent to collect bananas in a large square world.  We want the agent to collect the yellow bananas and avoid the blue bananas.  The agent has a positive reward of +1 for collecting a yellow banana and a negative reward of -1 for collecting a blue banana.  Success is measured by the agent getting an average score of +13 over 100 consecutive episodes.
 ![rl_bannana](https://user-images.githubusercontent.com/54339413/177430607-d5ba2a4c-dc60-4250-ac72-35f9c2279b9a.gif)
 
-## Enviornment Details
+## Environment Details
 State Space - state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction.
 Action Space - the agent has 4 discrete actions 
 * State Space - state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction.
@@ -13,10 +13,10 @@ Action Space - the agent has 4 discrete actions
   * 2 = Turn Left
   * 3 = Turn Right
 
-When the agent achives an average score of +13 over 100 consecutive episodes, the enviornment is solved.
+When the agent archives an average score of +13 over 100 consecutive episodes, the environment is solved.
 
 ### Model Hyperparameters
-An infinate number of hyperparameter combinations can be used in this problem.  Including:
+An infinite number of hyperparameter combinations can be used in this problem.  Including:
 1. number of hidden layers in the neural network
 2. number of nodes in each layer in the neural network
 3. the optimizer used in the neural network
@@ -32,7 +32,7 @@ To limit the number of experiments, we will change only the following:
 2. number of nodes in each layer in the neural network
 3. decay rate of epsilon.
 
-The following Hyperparameters are kepts fixed:
+The following Hyperparameters are kept fixed:
 BUFFER_SIZE = int(1e5)   replay buffer size \
 BATCH_SIZE = 64          minibatch size \
 GAMMA = 0.99             discount factor \
@@ -61,18 +61,18 @@ The following Algorithms were tested.
  
 ## Deep Q
 ### Learning Algorithm
-The baseline model is the Deep Q network.  Where the states are inputs to a neural network that outputs the actions and Q-values.  Two idential networks are used, one target and one local.  The network tries to minimize the squared difference between the output Q values and the target Q values.  Then back propagation updates the weights and biases.  
+The baseline model is the Deep Q network.  Where the states are inputs to a neural network that outputs the actions and Q-values.  Two identical networks are used, one target and one local.  The network tries to minimize the squared difference between the output Q values and the target Q values.  Then back propagation updates the weights and biases.  
 
 ### Model Architectures
 The neural network architecture is a simple feed forward neural network:  
 1. The inputs are the state size (for this problem it is a state space of 37)
 2. The hidden layer consists of several fully connected linear layers with a relu activation function
-3. The output is the number of actions we can take in the enviornment (for this problem the agent can take 4 actions)
+3. The output is the number of actions we can take in the environment (for this problem the agent can take 4 actions)
 4. The optimizer for this network is Adam with a learning rate of 5e-4
 5. The loss function to minimize is the mean squared error of the $Q_{expected}$ and the $Q_{target}$
 ## Double Deep Q
 ### Learning Algorithm
-In Double Deep Q learning we use two identical neural network models to mitigate the oversestimation of the action value function problem in DQN. Two neural network models are now used to build the target.  The online nextwork is used to get the index of the highest-valued action of the next state, then the target network gets the Q_values of the next state from the action of the online network.
+In Double Deep Q learning we use two identical neural network models to mitigate the overestimation of the action value function problem in DQN. Two neural network models are now used to build the target.  The online network is used to get the index of the highest-valued action of the next state, then the target network gets the Q_values of the next state from the action of the online network.
 
 One DQN is used to select the action \
 $a_{t+1}^{\star} := argmax Q_{1}(s_{t+1},a_{t+1})$ \
@@ -94,10 +94,10 @@ Or written another way: \
 $A_{\pi}(s, a) : = Q_{\pi}(s, a) - V_{\pi}(s)$ 
 		
 ### Model Architectures
-The model architecture changes from a neural network that estimates the Q values for each action (first model) to a neural network that computes the value of a state and the advantages seperatly (second model).  The seperate values are then added together to create the Q value estimates.  This should make the training process faster.
+The model architecture changes from a neural network that estimates the Q values for each action (first model) to a neural network that computes the value of a state and the advantages separately (second model).  The separate values are then added together to create the Q value estimates.  This should make the training process faster.
 ![](images/dueling_dqn.png)
 ## Prioritized Experience Replay
-To make the replay buffer for efficient (currently it uses a uniform distribution), we experiment with a Prioritized Experience Replay.  Each experience will be assigned a probability from 0 to 1.  The higher the priority of an experience, the higher the probablility it will get picked from the buffer.  
+To make the replay buffer for efficient (currently it uses a uniform distribution), we experiment with a Prioritized Experience Replay.  Each experience will be assigned a probability from 0 to 1.  The higher the priority of an experience, the higher the probability it will get picked from the buffer.   
 We assign the probability as follows
 $P(i) := \frac{p_{i}^{a}}{\sum_{k}p_{k}^{a}}$ with alpha (a) regulating the priority (alpha at zero would assign a uniform distribution).
 We start with alpha at 1 and slowly reduce it toward zero as training progresses.
@@ -120,7 +120,7 @@ Adding complexity to the model (additional layers and nodes) made a noticeable d
 
 # Ideas for Future Work
 **Neural Net Architecture**-Possibly use a CNN layer with the feed forward neural net to help identify colors.  Experiment with different number of layers and neuron combinations.  
-**Aditional Experiments**-Experiment with with a Dueling DDQN and other extensions of the DQN such as: 
+**Aditional Expdriments**-Experiment with a Dueling DDQN and other extensions of the DQN such as: 
 1. Distributional DQN 
 2. Noisy DQN 
 3. Prioritized DDQN
