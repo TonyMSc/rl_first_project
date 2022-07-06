@@ -12,7 +12,7 @@ The objective of this project is to train an agent to collect bananas in a large
   * 2 = Turn Left
   * 3 = Turn Right
 
-When the agent archives an average score of +13 over 100 consecutive episodes, the environment is solved.
+When the agent achieves an average score of +13 over 100 consecutive episodes, the environment is solved.
 
 ### Model Hyperparameters
 An infinite number of hyperparameter combinations can be used in this problem.  Including:
