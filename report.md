@@ -104,7 +104,15 @@ We choose priority based on the largest temporal difference error.
 
 # Plot of Rewards from Experiments
 Results from the experiments are as follows:
-
+![](images/scenario1.png)
+![](images/scenario2.png)
+![](images/scenario3.png)
+![](images/scenario4.png)
+![](images/scenario5.png)
+![](images/scenario6.png)
+![](images/scenario7.png)
+![](images/scenario8.png)
+![](images/scenario9.png)
 # Analysis of results
 # Ideas for Future Work
 **Neural Net Architecture**-Possibly use a CNN layer with the feed forward neural net to help identify colors.  Experiment with different number of layers and neuron combinations.  
