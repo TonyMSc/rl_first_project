@@ -81,8 +81,8 @@ $R + \gamma Q_{2}(s_{t+1}, a^{\star}_{t+1})$
 
 ### Model Architectures
 ## Dueling Deep Q
-The Dueling Deep Q changes the neural network 
 ### Learning Algorithm
+The Dueling Deep Q does not change the training process, the changes are in the neural network output layer. The output is split into two parts
 
 $Q_{\pi}(s, a) := V_{\pi}(s) + A_{\pi}(s, a)$ \
 where \
