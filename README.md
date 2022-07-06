@@ -25,7 +25,10 @@ https://github.com/udacity/Value-based-methods#dependencies
 
 Step3:
 Clone my project repo
+
+```bash
 git clone https://github.com/TonyMSc/rl_first_project.git
+```
 
 Step4:
 Copy the Navagation_main.ipynb notebook and all .py files cloned from the repo and move them to \Value-based-methods\p1_navigation\ folder from the enviornment you created in Step 2 instructions.
