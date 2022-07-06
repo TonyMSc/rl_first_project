@@ -28,3 +28,5 @@ Clone my project repo
 git clone https://github.com/TonyMSc/rl_first_project.git
 
 # Instructions
+The main file to train is Navagation.ipynb
+After the markdown section "4. It's Your Turn!", change the file path env = UnityEnvironment(file_name="<your location>/p1_navigation/Banana_Windows_x86_64/Banana.x86_64")
