@@ -4,8 +4,7 @@ The objective of this project is to train an agent to collect bananas in a large
 ![rl_bannana](https://user-images.githubusercontent.com/54339413/177430607-d5ba2a4c-dc60-4250-ac72-35f9c2279b9a.gif)
 
 ## Environment Details
-State Space - state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction.
-Action Space - the agent has 4 discrete actions 
+
 * State Space - state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around the agent's forward direction.
 * Action Space - the agent has 4 discrete actions 
   * 0 = Move Forward
