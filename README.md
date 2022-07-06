@@ -36,3 +36,14 @@ Copy the Navagation_main.ipynb notebook and all .py files cloned from the repo a
 
 # Instructions
 Open the Navagation_main.ipynb notebook and change the file "path env = UnityEnvironment(file_name=".../p1_navigation/Banana_Windows_x86_64/Banana.x86_64")". You should be able to run all the cells (graphs will print out).
+
+### A total of 9 experiments are performed
+1. DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995
+2. Double DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995
+3. Dueling DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995
+4. DQN with 3 hidden NN layers, 128 nodes, epsilon start 1.0, decay 0.8
+5. Double DQN with 3 hidden NN layers, 128 nodes, epsilon start 1.0, decay 0.8
+6. Dueling DQN with 3 hidden NN layers, 128 nodes, epsilon start 1.0, decay 0.8
+7. DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995, Prioritized Experience Replay
+8. Double DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995, Prioritized Experience Replay
+9. Dueling DQN with 2 hidden NN layers, 64 nodes, epsilon start 1.0, decay 0.995, Prioritized Experience Replay
