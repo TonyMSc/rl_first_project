@@ -80,6 +80,7 @@ A second DQN evaluates it \
 $R + \gamma Q_{2}(s_{t+1}, a^{\star}_{t+1})$ 
 
 ### Model Architectures
+The neural network does not change from the DQN, but the training process to create the target is split over two identical neural networks (one to select the action, the other to estimate the value), this helps increase stability.  
 ## Dueling Deep Q
 ### Learning Algorithm
 The Dueling Deep Q does not change the training process, the changes are in the neural network output layer. The output is split into two parts: state and the advantage
