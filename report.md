@@ -103,7 +103,7 @@ We start with alpha at 1 and slowly reduce it toward zero as training progresses
 We choose priority based on the largest temporal difference error.
 
 # Plot of Rewards from Experiments
-Results from the experiments are as follows:
+Results from the experiments are as follows: \
 ![](images/scenario1.png)
 ![](images/scenario2.png)
 ![](images/scenario3.png)
