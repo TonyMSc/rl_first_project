@@ -114,6 +114,9 @@ Results from the experiments are as follows: \
 ![](images/scenario8.png)
 ![](images/scenario9.png)
 # Analysis of results
+Holding the same hyperparameters constant, Double DQN and Dueling DQN did achieve the goal with fewer episodes than DQN.  Prioritized experience replay seems to increase the number of episodes to reach the goal of an average score of 13.  This may be due to the small problem size and limited states.  Prioritized experience replay may be more useful in a larger more complex problem. \
+Adding complexity to the model (additional layers and nodes) made a noticeable difference in performance.  Additional layers and nodes would increase the score early in training vs. a simpler model and reach the goal with fewer episodes.  However, based on the graph it does look like a more complex model has more oscillation between episodes vs. a simpler model that has a more linear trend upward.
+
 # Ideas for Future Work
 **Neural Net Architecture**-Possibly use a CNN layer with the feed forward neural net to help identify colors.  Experiment with different number of layers and neuron combinations.  
 **Aditional Experiments**-Experiment with with a Dueling DDQN and other extensions of the DQN such as: 
